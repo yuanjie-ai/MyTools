@@ -9,7 +9,7 @@ class MultiApply(object):
     def __init__(self, pandas_df):
         self.ddf = dd.from_pandas(pandas_df, 32)
 
-    def run(self, func):
+    def apply(self, func):
         """
         :param func: lambda df: df['xx'].progress_apply(func_)
         :return: pd.DataFrame
