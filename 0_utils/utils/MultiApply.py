@@ -1,8 +1,11 @@
+import dask.dataframe as dd
+from dask.multiprocessing import get
+from tqdm import tqdm
+
+tqdm.pandas(desc='prep')
+
+
 class MultiApply(object):
-    """
-    import dask.dataframe as dd
-    from dask.multiprocessing import get
-    """
 
     def __init__(self, pandas_df):
         self.pandas_df = pandas_df
