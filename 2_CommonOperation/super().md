@@ -24,13 +24,17 @@ class Base(object):
     def __init__(self, a, b):
         self.a = a
         self.b = b
+        
+     def f(self):
+        print(1)
 
 # 可调用父类的所有方法
 class A(Base):
     def __init__(self, a, b, c):
         super().__init__(a, b)
         self.c = c
-        
+
+A(1,3,4).f()
 ```
 ---
 [1]: http://www.runoob.com/python/python-func-super.html
