@@ -19,7 +19,7 @@ class childB(Base):
 
 super 的一个最常见用法可以说是在子类中调用父类的初始化方法了，比如：
 
-```
+```python
 class Base(object):
     def __init__(self, a, b):
         self.a = a
