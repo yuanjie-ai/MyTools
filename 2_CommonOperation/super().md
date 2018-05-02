@@ -51,8 +51,8 @@ class A(object):
 
 class MyClass(A):
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, c, **kwargs):
+        super().__init__(c=c, **kwargs) # 必须显示调用：c=c
 ```
 ---
 [1]: http://www.runoob.com/python/python-func-super.html
