@@ -37,4 +37,22 @@ class A(Base):
 A(1,3,4).f()
 ```
 ---
+继承A类所有参数及方法
+```python
+class A(object):
+
+    def __init__(self, a, b, c=1, **kwargs):
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def f(self):
+        print(self.c)
+
+class MyClass(A):
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+```
+---
 [1]: http://www.runoob.com/python/python-func-super.html
