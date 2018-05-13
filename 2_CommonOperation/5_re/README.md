@@ -1,5 +1,5 @@
 
-[CommonRegex]:[1]
+[CommonRegex][1]
 
 ---
 [1]:https://github.com/Jie-Yuan/CommonRegex
