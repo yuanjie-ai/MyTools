@@ -16,15 +16,6 @@ print(myVar)
 
 [1, 2, 3]
 ```
-- 生成器保存的是算法(yield)
-```
-def reverse(data):
-    for index in range(len(data)-1, -1, -1):
-        yield data[index]
-        
-for char in reverse('golf'):
-    print(char)
-```
 
 - print(value, ..., sep=' ', end='\n', file=sys.stdout)
     - file默认打印到终端
@@ -46,12 +37,6 @@ for char in reverse('golf'):
     ```
 
 ---
-
-- df增加多列列
-```python
-df = pd.DataFrame({'A': range(1, 11), 'B': np.random.randn(10)})
-df.assign(ln_A = lambda x: np.log(x.A), ln_B = lambda x: np.log(x.A), ...)
-```
 
 - df.pipe
 
