@@ -9,6 +9,16 @@
 对象可call，注意不是类，是对象。
 
 - `__setattr__`
+```python
+class MyClass():
+    def __call__(self, x):
+        return self.__f(x)
+    
+    def __f(self, x):
+        print(x)
+
+MyClass()('xx')
+```
 
 
 - `__class__`
