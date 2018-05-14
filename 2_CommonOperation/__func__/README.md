@@ -16,6 +16,7 @@ class MyClass():
         print(x)
 
 MyClass()('xx')
+MyClass().__call__('xx')
 ```
 
 - `__setattr__`
