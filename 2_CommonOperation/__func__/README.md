@@ -1,8 +1,9 @@
 <h1 align = "center">:rocket: __func__ :facepunch:</h1>
 
 ---
-- `__new__`:  
+- `__new__`:
   对象的创建，是一个静态方法，第一个参数是cls。(想想也是，不可能是self，对象还没创建，哪来的self)
+  
 - `__init__`
 - `__setattr__`
 
