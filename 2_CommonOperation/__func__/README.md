@@ -12,7 +12,7 @@
 - `__format__`
 - `__getattribute__`
 - `__hash__`
-- `__init__`
+- '~~__init__~~`
 - `__module__`
 - `__new__`
 - `__reduce__`
