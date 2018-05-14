@@ -20,8 +20,28 @@ class MyClass():
 MyClass()('xx')
 MyClass().__call__('xx')
 ```
-- `__str__`: 面向用户的
-- `__repr__`: 面向程序猿
+- `__str__`
+- `__repr__`: 
+__repr__和__str__这两个方法都是用于显示的，__str__是面向用户的，而__repr__面向程序员
+```python
+class MyClass:
+    def __init__(self, name='yuanjie'):
+        self.name = name
+        
+class Repr(MyClass):
+    def __repr__(self):
+        return '__repr__(%s)' % self.name
+
+class Str(MyClass):
+    def __str__(self):
+        return '__str__(%s)' % self.name
+        
+Repr()
+print(Repr())
+
+Str()
+print(Str())
+```
 
 
 - `__setattr__`
