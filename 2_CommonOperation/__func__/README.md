@@ -1,7 +1,7 @@
 <h1 align = "center">:rocket: __func__ :facepunch:</h1>
 
 ---
-- ~~__init__~~
+- ~~`_init__`~~
 - ~~__setattr__~~
 
 - `__call__`
