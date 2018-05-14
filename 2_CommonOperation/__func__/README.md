@@ -7,8 +7,6 @@
 对象的初始化， 是一个实例方法，第一个参数是self。
 - `__call__`:
 对象可call，注意不是类，是对象。
-
-- `__setattr__`
 ```python
 class MyClass():
     def __call__(self, x):
@@ -20,7 +18,7 @@ class MyClass():
 MyClass()('xx')
 ```
 
-
+- `__setattr__`
 - `__class__`
 - `__del__`
 - `__delattr__`
