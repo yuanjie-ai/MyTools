@@ -20,6 +20,9 @@ class MyClass():
 MyClass()('xx')
 MyClass().__call__('xx')
 ```
+- `__str__`: 面向用户的
+- `__repr__`: 面向程序猿
+
 
 - `__setattr__`
 - `__class__`
@@ -34,9 +37,9 @@ MyClass().__call__('xx')
 
 - `__reduce__`
 - `__reduce_ex__`
-- `__repr__`
+
 - `__setattr__`
 - `__sizeof__`
-- `__str__`
+
 - `__subclasshook__`
 - `__weakref__`
