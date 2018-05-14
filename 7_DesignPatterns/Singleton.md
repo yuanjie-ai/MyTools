@@ -13,3 +13,27 @@ class Singleton(object):
             cls.instance = super().__new__(cls, *args, **kwargs)  # cls.instance = super(Singleton, cls).__new__(cls, *args, **kwargs)
         return cls.instance
 ```
+
+- 装饰器
+```python
+def singleton(cls):
+    instances = {}
+
+    def getinstance(*args, **kwargs):
+        if cls not in instances:
+            instances[cls] = cls(*args, **kwargs)
+        return instances[cls]
+
+    return getinstance
+
+
+@singleton
+class MyClass:
+    a = 1
+
+
+c1 = MyClass()
+c2 = MyClass()
+print(c1 == c2)  # True
+
+```
