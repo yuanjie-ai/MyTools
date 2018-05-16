@@ -20,13 +20,13 @@ class Singleton(object):
 - `装饰器`
 ```python
 class singleton:
-    def __init__(self, aClass):
-        self.aClass = aClass
+    def __init__(self, cls):
+        self.cls = cls
         self.instance = None
 
     def __call__(self, *args, **kwargs):
         if self.instance:
-            self.instance = self.aClass(*args, **kwargs)
+            self.instance = self.cls(*args, **kwargs)
         return self.instance
 
 ```
