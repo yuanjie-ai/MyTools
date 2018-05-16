@@ -24,10 +24,11 @@ class singleton:
         self.aClass = aClass
         self.instance = None
 
-    def __call__(self, *args):
+    def __call__(self, *args, **kwargs):
         if self.instance:
-            self.instance = self.aClass(*args)
+            self.instance = self.aClass(*args, **kwargs)
         return self.instance
+
 ```
 
 ```python
