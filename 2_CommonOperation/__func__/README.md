@@ -15,12 +15,11 @@
 ```python
 class MyClass():
     def __call__(self, x):
-        return self.__f(x)
-    
-    def __f(self, x):
+        return self.__f(x) # 有无return无所谓
+    def __f(self, x):
         print(x)
 
-MyClass()('xx')
+MyClass()('xx')  
 MyClass().__call__('xx')
 ```
 - `__str__`
