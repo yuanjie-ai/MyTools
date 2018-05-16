@@ -19,6 +19,18 @@ class Singleton(object):
 
 - `装饰器`
 ```python
+class singleton:
+    def __init__(self, aClass):
+        self.aClass = aClass
+        self.instance = None
+
+    def __call__(self, *args):
+        if self.instance:
+            self.instance = self.aClass(*args)
+        return self.instance
+```
+
+```python
 def singleton(cls):
     instances = {}
 
@@ -40,6 +52,7 @@ c2 = MyClass()
 print(c1 == c2)  # True
 
 ```
+
 
 - `metaclass（元类）`
 
