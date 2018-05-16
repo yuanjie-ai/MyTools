@@ -25,7 +25,7 @@ class singleton:
         self.instance = None
 
     def __call__(self, *args, **kwargs):
-        if self.instance:
+        if self.instance is None:
             self.instance = self.cls(*args, **kwargs)
         return self.instance
 
