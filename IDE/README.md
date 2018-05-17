@@ -1,3 +1,6 @@
+<h1 align = "center">:rocket: IDE :facepunch:</h1>
+
+---
 ## [1. Tutorial][2]
 ## [2. JetBrains 系列软件汉化包][1]
 
