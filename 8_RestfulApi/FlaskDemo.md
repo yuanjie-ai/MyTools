@@ -1,12 +1,5 @@
 ```python
 # -*- coding: utf-8 -*-
-"""
-__title__ = 'api'
-__author__ = 'JieYuan'
-__mtime__ = '2018/5/10'
-"""
-# coding=utf-8
-# from urllib.parse import urljoin
 from MyNLP.utils.word_embedding import MyGlove
 
 import jieba
