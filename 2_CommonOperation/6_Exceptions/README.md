@@ -1,6 +1,7 @@
 [<h1 align = "center">:rocket: Exceptions :facepunch:</h1>][0]
 
 ---
+![Exceptions][1]
 
 - raise允许你随时抛出异常。
 
@@ -23,3 +24,4 @@
 
 ---
 [0]: https://mp.weixin.qq.com/s/8wkotC9PdgGLCIMRHPL8SQ
+[1]: https://mmbiz.qpic.cn/mmbiz_jpg/GJM4P9zwRq9y5l5dM3a1eibtphasJdlSG8SbDBSwB49Flr2svmcGlh0hFfZ8yK3zKowgUbWBL7ZQjKOFTK5sB9A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1
