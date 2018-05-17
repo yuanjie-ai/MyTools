@@ -18,7 +18,7 @@ def index():
         result = {"Get Key Words": {"url": url_for("keywords"),
                                    "params": ["sentence"]}}
 
-        result_body = flask.json.dumps(result)
+        result_body = flask.json.dumps(result, encoding='utf-8')
         return Response(result_body, mimetype="application/json")
 
 
@@ -44,7 +44,7 @@ def keywords():
         },
         "result": glove.keywords(jieba.lcut(sentence))
     }
-    result_body = flask.json.dumps(result, ensure_ascii=False)
+    result_body = flask.json.dumps(result, ensure_ascii=False, encoding='utf-8')
     return Response(result_body,  mimetype="application/json")
 
 if __name__ == "__main__":
