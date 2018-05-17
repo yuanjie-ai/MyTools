@@ -48,5 +48,6 @@ def keywords():
     return Response(result_body,  mimetype="application/json")
 
 if __name__ == "__main__":
+    app.config['JSON_AS_ASCII'] = False
     app.run(host='10.244.2.3', port=9955)
 ```
