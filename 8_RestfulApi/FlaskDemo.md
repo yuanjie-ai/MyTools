@@ -15,7 +15,7 @@ glove = MyGlove('/DATA/1_DataCache/FinCorpus/vectors.txt')
 def index():
     with app.test_request_context():
         # 生成每个函数监听的url以及该url的参数
-        result = {"predict_iris": {"url": url_for("keywords"),
+        result = {"Get Key Words": {"url": url_for("keywords"),
                                    "params": ["sentence"]}}
 
         result_body = flask.json.dumps(result)
@@ -39,7 +39,7 @@ def keywords():
 
     # 构造返回数据
     result = {
-        "features": {
+        "Corpus": {
             "sentence": sentence,
         },
         "result": glove.keywords(jieba.lcut(sentence))
