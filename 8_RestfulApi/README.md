@@ -7,8 +7,8 @@ python -m http.server 8081
 ```
 
 - [Flask][1]
-  - cut
-  - keywords
+  - `cut`
+  - `keywords`
 ```
 http://211.159.150.211:8000/cut/jieba?var=车险要多少
 http://211.159.150.211:8000/keywords/glove?var=车险要多少
