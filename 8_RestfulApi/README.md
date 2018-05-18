@@ -7,11 +7,11 @@
 
 - [Flask][1]
 
-  - `cut`
+  - [cut][2]: http://211.159.150.211:8000/cut/jieba?var=车险要多少
   
   `http://211.159.150.211:8000/cut/jieba?var=车险要多少`
   
-  - `keywords`
+  - [keywords][3]: http://211.159.150.211:8000/keywords/glove?var=车险要多少
   
   `http://211.159.150.211:8000/keywords/glove?var=车险要多少`
 
