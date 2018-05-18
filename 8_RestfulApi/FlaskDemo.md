@@ -62,7 +62,7 @@ def get_result(result):
     """
     :param result: 构造返回数据
     """
-    result_body = flask.json.dumps(result, ensure_ascii=False)
+    result_body = flask.json.dumps(result, ensure_ascii=False, encoding='utf-8')
     return Response(result_body, mimetype="application/json")
 
 
