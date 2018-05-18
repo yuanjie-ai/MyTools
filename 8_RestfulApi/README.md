@@ -8,12 +8,10 @@
 - [Flask][1]
 
   - [cut][2]
-  
-  `http://211.159.150.211:8000/cut/jieba?var=车险要多少`
+  ![][4]
   
   - [keywords][3]
-  
-  `http://211.159.150.211:8000/keywords/glove?var=车险要多少`
+  ![][5]
 
 
 
@@ -22,3 +20,5 @@
 [1]: https://github.com/Jie-Yuan/MyTools/blob/master/8_RestfulApi/FlaskDemo.md
 [2]: http://211.159.150.211:8000/cut/jieba?var=车险要多少
 [3]: http://211.159.150.211:8000/keywords/glove?var=车险要多少
+[4]: https://github.com/Jie-Yuan/MyTools/blob/master/8_RestfulApi/pictures/cut.png
+[5]: https://github.com/Jie-Yuan/MyTools/blob/master/8_RestfulApi/pictures/keywords.png
