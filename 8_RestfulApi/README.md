@@ -2,9 +2,8 @@
 
 ---
 - 文件服务
-```python
-python -m http.server 8081
-```
+
+`python -m http.server 8081`
 
 - [Flask][1]
   - `cut`
