@@ -6,15 +6,14 @@
 python -m http.server 8081
 ```
 
-## [Flask][1]
-- cut
+- [Flask][1]
+  - cut
+  - keywords
 ```
 http://211.159.150.211:8000/cut/jieba?var=车险要多少
-```
-- keywords
-```
 http://211.159.150.211:8000/keywords/glove?var=车险要多少
 ```
+
 
 ---
 [0]: https://mp.weixin.qq.com/s/2ZKDNF-FrMZe7L-vAtwhZw
