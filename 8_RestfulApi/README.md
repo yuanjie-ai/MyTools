@@ -6,7 +6,6 @@
 `python -m http.server 8081`
 
 - [Flask][1]
-`http://211.159.150.211:8000`
 
   - `cut`
   
