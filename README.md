@@ -83,6 +83,20 @@ echo 'c = get_config()
 # Run all nodes interactively
 c.InteractiveShell.ast_node_interactivity = "all"' >> .ipython/profile_default/ipython_config.py
 ```
+- 远程配置
+```sh
+jupyter notebook --generate-config
+jupyter notebook password # 设置密码
+
+# 写入文件~/.jupyter/jupyter_notebook_config.py
+c.NotebookApp.ip='*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888 # 设置端口
+c.NotebookApp.notebook_dir = '/yuanjie' # 设置目录
+c.InteractiveShell.ast_node_interactivity = "all" # 设置多输出
+
+```
+
 ---
 ## 常用包
 ```shell
