@@ -1,5 +1,5 @@
 ```python
-apps_of_ip.setdefault(sample['ip'], []).append(str(sample['app']))
+apps_of_ip.setdefault(sample['ip'], []).append(str(sample['app'])) # [].append
 ```
 
 ```python
