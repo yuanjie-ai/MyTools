@@ -1,6 +1,9 @@
 <h1 align = "center">:rocket: 常用操作 :facepunch:</h1>
 
 ---
+改善 Python 程序的 91 个建议
+https://zhuanlan.zhihu.com/p/26155739
+---
 - 取整数各位置数
 ```python
 f = lambda x: np.floor(x / np.array([10**i for i in range(len(str(x)))])) % 10
