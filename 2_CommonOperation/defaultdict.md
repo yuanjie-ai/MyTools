@@ -1,4 +1,8 @@
 ```python
+apps_of_ip.setdefault(sample['ip'], []).append(str(sample['app']))
+```
+
+```python
 import collections
 s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
 
