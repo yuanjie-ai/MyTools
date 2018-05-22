@@ -3,7 +3,7 @@
 ---
 ## 虚拟环境
 - hatch
-- pyvenv
+- [pyvenv][27]
 
 `rm -rf /var/tmp/*.swp`
 
@@ -160,3 +160,4 @@ https://blog.csdn.net/sijiaqi11/article/details/78601258
 [24]: https://www.processon.com/
 [25]: https://github.com/jgraph/drawio-desktop/releases
 [26]: https://opsx.alibaba.com/mirror
+[27]: https://github.com/ofek/hatch/blob/master/COMMANDS.rst
