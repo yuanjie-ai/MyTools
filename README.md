@@ -2,8 +2,8 @@
 
 ---
 ## 虚拟环境
-- hatch
-- [pyvenv][27]
+- [hatch][27]
+- pyvenv
 
 `rm -rf /var/tmp/*.swp`
 
