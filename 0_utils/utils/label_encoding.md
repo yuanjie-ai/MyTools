@@ -1,7 +1,7 @@
 ```python
 def label_encoding(seq):
-#     from collections import defaultdict
-#     label2idx = defaultdict(int)
+    # from collections import defaultdict
+    # label2idx = defaultdict(int)
     label2idx = {}
     for i in seq:
         if i not in label2idx:
