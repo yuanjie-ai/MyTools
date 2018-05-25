@@ -2,7 +2,7 @@
 
 ---
 
-## [configparser][configparser]
+## [configparser][https://blog.csdn.net/shortwall/article/details/78615368]
 ## 虚拟环境
 - [hatch][27]
 - pyvenv
