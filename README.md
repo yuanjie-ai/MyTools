@@ -2,7 +2,7 @@
 
 ---
 
-## [configparser][https://blog.csdn.net/shortwall/article/details/78615368]
+## [configparser][28]
 
 ## 虚拟环境
 - [hatch][27]
@@ -166,3 +166,4 @@ https://blog.csdn.net/sijiaqi11/article/details/78601258
 [25]: https://github.com/jgraph/drawio-desktop/releases
 [26]: https://opsx.alibaba.com/mirror
 [27]: https://github.com/ofek/hatch/blob/master/COMMANDS.rst
+[28]: https://blog.csdn.net/shortwall/article/details/78615368
