@@ -3,7 +3,8 @@
 ---
 
 ```sh
-vim setup.py # https://packaging.python.org/tutorials/packaging-projects/#setup-args
+# https://packaging.python.org/tutorials/packaging-projects/#setup-args
+vim setup.py 
 
 python setup.py sdist bdist_wheel && twine upload --repository-url https://test.pypi.org/legacy/ ./dist/*
 
