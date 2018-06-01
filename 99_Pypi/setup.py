@@ -17,6 +17,7 @@ setup(
     maintainer_email='313303303@qq.com',
     license='MIT',
     packages=find_packages(),
+    include_package_data=True,
     platforms=["all"],
     python_requires='>=2.7, <4',
     classifiers=[
