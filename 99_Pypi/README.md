@@ -5,9 +5,7 @@
 ```sh
 vim setup.py
 
-python setup.py sdist bdist_wheel
-
-twine upload --repository-url https://test.pypi.org/legacy/ ./dist/*
+python setup.py sdist bdist_wheel && twine upload --repository-url https://test.pypi.org/legacy/ ./dist/*
 
 # 185502882338643188a
 twine upload ./dist/* 
