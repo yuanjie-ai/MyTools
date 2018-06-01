@@ -8,9 +8,8 @@ setup(
     name = 'pyTool',
     version = '1.0.0',
     keywords = ["DeepLearning", "313303303@qq.com"],
-    description = (
-        '项目的简单描述'
-    ),
+    url = 'https://github.com/Jie-Yuan',
+    description = ('description'),
     long_description = long_description,
     long_description_content_type="text/markdown",
     author = 'JieYuan',
@@ -20,7 +19,7 @@ setup(
     license = 'MIT',
     packages = find_packages(),
     platforms = ["all"],
-    url = 'https://github.com/Jie-Yuan',
+    python_requires = '>=2.7, <4',
     classifiers = [
         'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
