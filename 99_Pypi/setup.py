@@ -7,8 +7,8 @@ with open("README.md") as f:
 setup(
     name = 'pyTool',
     version = '1.0.0',
-    keywords = ["DeepLearning", "313303303@qq.com"],
     url = 'https://github.com/Jie-Yuan',
+    keywords = ["DeepLearning", "313303303@qq.com"],
     description = ('description'),
     long_description = long_description,
     long_description_content_type="text/markdown",
