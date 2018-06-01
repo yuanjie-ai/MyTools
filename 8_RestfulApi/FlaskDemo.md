@@ -7,7 +7,7 @@ __mtime__ = '2018/5/18'
 """
 
 import flask
-from flask import Flask, Response, request, url_for
+from flask import Flask, Response, request, url_for, jsonify
 
 # -------------------------------
 import jieba
@@ -27,7 +27,7 @@ def keywords():
         "result": '无处理逻辑',
         "苏宁金融关键词": glove.keywords(jieba.lcut(values))
     }
-    return get_result(result)
+    return jsonify(result)
 
 
 @app.route("/cut/jieba", methods=["GET"])
@@ -57,13 +57,6 @@ def index():
         result_body = flask.json.dumps(result, encoding='utf-8')
         return Response(result_body, mimetype="application/json")
 
-
-def get_result(result):
-    """
-    :param result: 构造返回数据
-    """
-    result_body = flask.json.dumps(result, ensure_ascii=False, encoding='utf-8')
-    return Response(result_body, mimetype="application/json")
 
 
 if __name__ == "__main__":
