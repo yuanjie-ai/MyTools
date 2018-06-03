@@ -57,8 +57,12 @@ www.datacamp.com
 - [git branch][14]
 ```
 # 检验线上线下一致性
+git status
+git pull
+git checkout
 git add/rm ...
 git checkout
+git push
 ```
 - Git常用命令速查
 ![Git常用命令速查][11]
