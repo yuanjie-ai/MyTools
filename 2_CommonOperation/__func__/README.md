@@ -15,7 +15,7 @@
 ```python
 class MyClass():
     def __call__(self, x):
-        return self.__f(x) # 有无return无所谓
+        self.__f(x) # 有无return无所谓
     def __f(self, x):
         print(x)
 
