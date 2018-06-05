@@ -21,6 +21,6 @@ class Pickle(object):
             pickle.dump(object_, f)
 
     def deserialize(self, file):
-        with open(file, 'wb') as f:
+        with open(file, 'rb') as f:
             return pickle.load(f)
 ```
