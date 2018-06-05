@@ -5,6 +5,8 @@ set2 = {4, 5, 6, 7, 8}
 
 set1 | set2
 set1.union(set2)
+# 保存在set1
+set1.update(set2)
 ```
 
 - 交集
