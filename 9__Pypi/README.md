@@ -5,6 +5,7 @@
 ```sh
 
 # https://packaging.python.org/tutorials/packaging-projects/#setup-args
+# http://python.jobbole.com/82077/
 vim setup.py 
 
 pip install setuptools twine wheel -U
