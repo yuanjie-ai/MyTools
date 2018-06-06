@@ -7,7 +7,7 @@ https://www.cnblogs.com/Lival/p/6203111.html
 ```python
 try:
     print("正常的操作")
-except <名字>:
+except <名字>: # 不加名字只能放最后
     print("发生异常，执行这块代码")
     print("如果在try部份引发了'name'异常")
 except <名字>, <数据>:
