@@ -41,6 +41,4 @@ class Cprint(object):
 
 if __name__ == '__main__':
     Cprint().cprint()
-if __name__ == '__main__':
-    Colors('YELLOW')('aaaaaaaaaa')
 ```
