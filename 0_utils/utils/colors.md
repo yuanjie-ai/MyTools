@@ -1,22 +1,46 @@
 ```python
 # https://www.cnblogs.com/hellojesson/p/5961570.html
-class Colors(object):
-    def __init__(self, color='BLUE'):
-        self.color = color
-        self.__colors = {
-            'BLACK': '\033[90m%s\033[0m',
-            'RED': '\033[91m%s\033[0m',
-            'GREEN': '\033[92m%s\033[0m',
-            'YELLOW': '\033[93m%s\033[0m',
-            'BLUE': '\033[94m%s\033[0m',
-            'PURPLE': '\033[95m%s\033[0m',
-            'CYAN': '\033[96m%s\033[0m',
-            'WHITE': '\033[97m%s\033[0m',
+class Cprint(object):
+    def __init__(self):
+        self.foreground_color = {
+            'black': 90,
+            'red': 91,
+            'green': 92,
+            'yellow': 93,
+            'blue': 94,
+            'purple': 95,
+            'cyan': 96,
+            'white': 97
         }
 
-    def __call__(self, string='Hello World!!!'):
-        print(self.__colors[self.color] % string)
+        self.background_color = {
+            'black': 40,
+            'red': 41,
+            'green': 42,
+            'yellow': 43,
+            'blue': 44,
+            'purple': 45,
+            'cyan': 46,
+            'white': 47
+        }
 
+    def cprint(self, obj='Hello World!!!', foreground='red', background='blue', mode=0):
+        """
+        :param obj: 可字符化
+        :param foreground:
+            'black', 'red', 'green', 'yellow', 'blue', 'purple', 'cyan', 'white'
+        :param background:
+            'black', 'red', 'green', 'yellow', 'blue', 'purple', 'cyan', 'white'
+        :param mode:
+            0（默认值）、1（高亮）、22（非粗体）、4（下划线）、24（非下划线）、 5（闪烁）、25（非闪烁）、7（反显）、27（非反显）
+        :return:
+        """
+
+        print('\033[%s;%s;%sm%s\033[0m' % (mode, self.foreground_color[foreground], self.background_color[background], obj))
+
+
+if __name__ == '__main__':
+    Cprint().cprint()
 if __name__ == '__main__':
     Colors('YELLOW')('aaaaaaaaaa')
 ```
