@@ -1,4 +1,5 @@
 ```python
+# https://www.cnblogs.com/hellojesson/p/5961570.html
 class Colors(object):
     def __init__(self, color='BLUE'):
         self.color = color
