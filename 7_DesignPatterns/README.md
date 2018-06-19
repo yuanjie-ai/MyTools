@@ -1,1 +1,1 @@
-## 1. 单例
+https://github.com/cundi/Mastering.Python.Design.Patterns
