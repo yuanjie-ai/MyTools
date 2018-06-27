@@ -1,6 +1,29 @@
 <h1 align = "center">:rocket: 装饰器 :facepunch:</h1>
 
 ---
+## 常用
+```python
+class tracer:
+
+    def __call__(self, func):
+        self.func = func
+
+        def realfunc(*args):
+            self.func(*map(str, args))
+
+        return realfunc
+
+@tracer()
+def spam(a, b, c):
+    print(a + b + c)
+
+
+spam(1, 2, 3)
+```
+
+
+
+---
 ```python
 @property
 @staticmethod
