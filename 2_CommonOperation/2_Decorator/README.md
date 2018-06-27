@@ -9,15 +9,14 @@ class tracer:
         self.func = func
 
         def realfunc(*args):
-            self.func(*map(str, args))
+            return self.func(*map(str, args))
 
         return realfunc
 
 @tracer()
 def spam(a, b, c):
-    print(a + b + c)
-
-
+    return (a + b + c)
+    
 spam(1, 2, 3)
 ```
 
