@@ -18,3 +18,5 @@ echo aaaaa >> temp.txt
   - 删除光标之后的全部内容: Ctrl + K
   - 撤销之前的删除操作: Ctrl + Y
   - 删除之前的一个参数: Ctrl + W
+  
+- sudo!!: 对上一行sh授权
