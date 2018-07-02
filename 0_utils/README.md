@@ -1,4 +1,22 @@
-# :rocket: 临时笔记 :facepunch:
+# :rocket: 常用 :facepunch:
+---
+- 常用import
+```python
+import warnings
+import tqdm
+warnings.filterwarnings('ignore')
+
+
+import numpy as np
+import pandas as pd
+
+
+from keras.layers import Dropout, Dense, Embedding, Flatten, GRU, Input, LSTM, Lambda
+from keras.models import K, Input, Model, Sequential, load_model
+from keras.optimizers import Adam
+from keras.regularizers import l1, l2, l1_l2
+```
+
 ---
 https://mp.weixin.qq.com/s/yja52WLIekZSRLR24s6qGg
 
