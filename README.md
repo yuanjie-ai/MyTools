@@ -15,6 +15,11 @@ https://blog.csdn.net/luanpeng825485697/article/details/78347433
 https://www.zhihu.com/question/24590883
 
 www.datacamp.com
+
+## Pycharm
+- `Settings → Editor → Auto-Import`
+
+
 ## 镜像
 - [科大][88]
 - [清华][888]
@@ -44,6 +49,7 @@ www.datacamp.com
     - Xmind
     - [draw.io][23]: [桌面版][25]
     - [processon][24]
+    
 ---
 # 资源类
 - [最新emoji][16]
