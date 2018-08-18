@@ -84,7 +84,7 @@ import functools
 
 def decorator(text):
     def _wrapper(func):
-        @functools.wraps(func)
+        @functools.wraps(func) # func.__name__返回传参的函数名
         def wrapper(*args, **kw):
             print('%s %s():' % (text, func.__name__))  # 主体
             return func(*args, **kw)
