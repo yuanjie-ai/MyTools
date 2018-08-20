@@ -3,6 +3,53 @@
 ---
 ## 常用
 ```python
+import wrapt
+import inspect
+from functools import wraps
+
+
+@wrapt.decorator
+def pass_through(wrapped, instance, args, kwargs):
+    return wrapped(*args, **kwargs)
+    
+def with_arguments(myarg1, myarg2):
+    @wrapt.decorator
+    def wrapper(wrapped, instance, args, kwargs):
+        return wrapped(*args, **kwargs)
+        
+    return wrapper
+
+@wrapt.decorator
+def universal(wrapped, instance, args, kwargs):
+    if instance is None:
+        if inspect.isclass(wrapped):
+            print('Decorator was applied to a class.')
+            return wrapped(*args, **kwargs)
+        else:
+            print('Decorator was applied to a function or staticmethod.')
+            return wrapped(*args, **kwargs)
+    else:
+        if inspect.isclass(instance):
+            print('Decorator was applied to a classmethod.')
+            return wrapped(*args, **kwargs)
+        else:
+            print('Decorator was applied to an instancemethod.')
+            return wrapped(*args, **kwargs)
+            
+class A:
+    @universal
+    def f(self, x):
+        return x
+```
+
+
+
+
+
+
+
+---
+```python
 class tracer:
 
     def __call__(self, func):
