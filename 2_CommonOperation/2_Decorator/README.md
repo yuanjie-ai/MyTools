@@ -21,6 +21,16 @@ def with_arguments(myarg1, myarg2):
 
 @wrapt.decorator
 def universal(wrapped, instance, args, kwargs):
+    """
+    class A:
+        @universal
+        def f(self, x):
+            return x
+
+    @universal
+    def f(x):
+        return x
+    """
     if instance is None:
         if inspect.isclass(wrapped):
             print('Decorator was applied to a class.')
@@ -35,79 +45,9 @@ def universal(wrapped, instance, args, kwargs):
         else:
             print('Decorator was applied to an instancemethod.')
             return wrapped(*args, **kwargs)
-            
-class A:
-    @universal
-    def f(self, x):
-        return x
 ```
 
 
-
-
-
-
-
----
-```python
-class tracer:
-
-    def __call__(self, func):
-        self.func = func
-
-        def realfunc(*args):
-            return self.func(*map(str, args))
-
-        return realfunc
-
-@tracer()
-def spam(a, b, c):
-    return (a + b + c)
-    
-spam(1, 2, 3)
-```
-
-
-
----
-```python
-@property
-@staticmethod
-@classmethod
-```
-- `wrapt`
-- `from decorator import decorate`
-```python
-import wrapt
-
-
-@wrapt.decorator
-def logging(func, instance, args, kwargs):  # instance is must
-    print ("[DEBUG]: enter {}()".format(func.__name__))
-    return func(*args, **kwargs)
- 
-# without argument in decorator
-def with_arguments(myarg1, myarg2):
-    @wrapt.decorator
-    def wrapper(func, instance, args, kwargs):
-        print ("[DEBUG]: enter {}()".format(func.__name__))
-        return func(*args, **kwargs)
-    return wrapper
-    
-from decorator import decorator
-@decorator
-def _logging(func, *args, **kwargs):
-    print ("[DEBUG]: enter {}()".format(func.__name__))
-    return func(*args, **kwargs)
-
-@logging
-def say(): 
-    pass
-
-@_logging
-def _say():
-    pass
-```
 ---
 ## 自定义装饰器
 ### 1. 普通装饰器
