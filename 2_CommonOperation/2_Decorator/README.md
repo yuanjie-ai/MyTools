@@ -33,17 +33,17 @@ def universal(wrapped, instance, args, kwargs):
     """
     if instance is None:
         if inspect.isclass(wrapped):
-            print('Decorator was applied to a class.')
+            print('Decorator was applied to a class  ...')
             return wrapped(*args, **kwargs)
         else:
-            print('Decorator was applied to a function or staticmethod.')
+            print('Decorator was applied to a function or staticmethod ...')
             return wrapped(*args, **kwargs)
     else:
         if inspect.isclass(instance):
-            print('Decorator was applied to a classmethod.')
+            print('Decorator was applied to a classmethod ...')
             return wrapped(*args, **kwargs)
         else:
-            print('Decorator was applied to an instancemethod.')
+            print('Decorator was applied to an instancemethod ...')
             return wrapped(*args, **kwargs)
 ```
 
