@@ -13,8 +13,8 @@ class childA(Base):
 # 使用super()继承时不用显式引用基类
 class childB(Base):
     def __init__(self):
-        print 'creat B ',
-        super(childB, self).__init__()
+        print ('creat B ')
+        super().__init__()  # super(childB, self).__init__()
 ```
 
 super 的一个最常见用法可以说是在子类中调用父类的初始化方法了，比如：
