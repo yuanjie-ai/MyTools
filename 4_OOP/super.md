@@ -1,4 +1,5 @@
 ## [super(): 用于调用父类(超类)的一个方法][1]
+> __init__参数一一对应
 
 ```python
 class Base(object):
