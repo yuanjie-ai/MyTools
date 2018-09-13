@@ -79,4 +79,10 @@ if a < 10:
         raise MyException("my excepition is raised ")
     except MyException as e:
         print(e.message)
+        
+if a < 10:
+    try:
+        raise Exception('我们')
+    except Exception as e:
+        print(e)
 ```
