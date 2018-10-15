@@ -19,6 +19,8 @@ www.datacamp.com
 ## Pycharm
 - `Settings → Editor → Auto-Import`
 
+## Vim
+- [行号高亮][29]
 
 ## 镜像
 - [科大][88]
@@ -177,3 +179,4 @@ https://blog.csdn.net/sijiaqi11/article/details/78601258
 [26]: https://opsx.alibaba.com/mirror
 [27]: https://github.com/ofek/hatch/blob/master/COMMANDS.rst
 [28]: https://blog.csdn.net/shortwall/article/details/78615368
+[29]: https://www.cnblogs.com/zl-graduate/p/5901090.html
