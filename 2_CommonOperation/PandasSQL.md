@@ -1,5 +1,6 @@
 - Case When xx Then xx Else xx End
 ```
-t = s < 3
-s.mask(t, 0).where(t, 1)
+def casewhen(cond, _then=0, _else=1):
+    """cond = data.label == -1"""
+    return data.label.mask(cond, _then).where(cond, _else)
 ```
