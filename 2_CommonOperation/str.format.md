@@ -1,3 +1,4 @@
+#`%[(name)][flags][width].[precision]`
 
 ## 1. 字符串格式化
 ```python
@@ -15,3 +16,7 @@ Decimal('5.123').quantize(Decimal('0.00'))
 ```
 
 ## 3. np.set_printoptions(3)
+
+
+---
+http://www.runoob.com/python/att-string-format.html
