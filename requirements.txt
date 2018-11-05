@@ -1,4 +1,6 @@
 tqdm
+rgf
+catboost
 xgboost
 lightgbm
 jieba
@@ -6,3 +8,11 @@ gensim
 tensorflow
 keras
 pyspark
+seaborn
+missingno
+scikit-plot
+sklearn-evaluation
+fire
+ml_metrics
+mlxtend
+pandas_summary
