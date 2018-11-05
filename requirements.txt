@@ -4,3 +4,5 @@ lightgbm
 jieba
 gensim
 tensorflow
+keras
+pyspark
