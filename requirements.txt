@@ -1,0 +1,6 @@
+tqdm
+xgboost
+lightgbm
+jieba
+gensim
+tensorflow
