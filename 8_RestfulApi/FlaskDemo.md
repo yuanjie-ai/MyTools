@@ -38,7 +38,7 @@ def cut():
         "result": '无处理逻辑',
         "苏宁金融关键词": ' '.join(jieba.lcut(values))
     }
-    return get_result(result)
+    return jsonify(result)
 
 
 # Api说明书
