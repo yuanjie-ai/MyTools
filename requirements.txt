@@ -18,3 +18,4 @@ mlxtend
 pandas_summary
 eli5
 thefuck
+wrapt
