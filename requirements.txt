@@ -20,3 +20,7 @@ eli5
 thefuck
 wrapt
 retrying
+flashtext
+wget
+pendulum
+
