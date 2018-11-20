@@ -1,4 +1,4 @@
-<h1 align = "center">:rocket: 更好用的时间模块 :facepunch:</h1>
+[<h1 align = "center">:rocket: Pendulum :facepunch:</h1>][1]
 
 ---
 ## 创建时间
@@ -99,3 +99,7 @@ str(p.diff(p.add(1))) # pendulum对象作差
 # Pendulum格式
 - p.set_to_string_format('%Y-%m-%d')
 - p.reset_to_string_format()
+
+
+---
+[1]: https://pendulum.eustace.io/docs/
