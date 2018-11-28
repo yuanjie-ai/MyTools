@@ -1,5 +1,5 @@
 ```
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Shell 输出脚本名称及参数";
 echo "执行的脚本名：$0";
