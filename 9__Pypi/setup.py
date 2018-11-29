@@ -26,7 +26,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
-    package_data={'': ['*.*']},
+    package_data={'': ['*.*']}, # 数据文件夹+__init__.py
     platforms=["all"],
     python_requires='>=3.5',
     classifiers=[
