@@ -6,8 +6,6 @@ __author__ = 'JieYuan'
 __mtime__ = '18-11-29'
 """
 
-# -*- coding: utf-8 -*-
-
 from setuptools import find_packages, setup
 
 with open("README.md", encoding='utf-8') as f:
