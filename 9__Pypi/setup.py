@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+"""
+__title__ = 'setup.py'
+__author__ = 'JieYuan'
+__mtime__ = '18-11-29'
+"""
+
 # -*- coding: utf-8 -*-
 
 from setuptools import find_packages, setup
@@ -22,7 +30,7 @@ setup(
     include_package_data=True,
     package_data={'': ['*.*']},
     platforms=["all"],
-    python_requires='>=2.7, <4',
+    python_requires='>=3.5',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
@@ -30,9 +38,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: Implementation',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries'
