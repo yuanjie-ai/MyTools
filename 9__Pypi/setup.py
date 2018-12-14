@@ -1,19 +1,25 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 __title__ = 'setup.py'
 __author__ = 'JieYuan'
-__mtime__ = '18-11-29'
+__mtime__ = '18-12-14'
 """
-
+import os
 from setuptools import find_packages, setup
 
 with open("README.md", encoding='utf-8') as f:
     long_description = f.read()
 
+def get_requirements():
+    _ = './requirements.txt'
+    if os.path.isfile(_):
+        with open(_) as f:
+            return f.read().split()
+
 setup(
     name='pyTool',
-    version='1.0.0',
+    version='0.0.1',
     url='https://github.com/Jie-Yuan',
     keywords=["DeepLearning", "313303303@qq.com"],
     description=('description'),
@@ -26,7 +32,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
-    package_data={'': ['*.*']}, # 数据文件夹+__init__.py
+    package_data={'': ['*.*']},  # 数据文件夹+__init__.py
     platforms=["all"],
     python_requires='>=3.5',
     classifiers=[
@@ -41,11 +47,5 @@ setup(
         'Topic :: Software Development :: Libraries'
     ],
 
-    # pip install -r requirements.txt
-    install_requires=[
-        'pandas>=0.19.2',
-        'numpy>=1.11.3',
-        'scipy>=0.18.1',
-        'matplotlib>=2.0.0',
-    ]
+    install_requires=get_requirements
 )
