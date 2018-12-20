@@ -2,7 +2,7 @@
 
 #### `from flask_restful.reqparse import RequestParser`
 
-- `RequestParser().add_argument(location=...)`
+- `RequestParser().add_argument(...)`
   - type=int
   - required=True
   - case_sensitive=True
