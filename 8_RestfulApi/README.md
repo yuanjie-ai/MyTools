@@ -5,22 +5,20 @@
 
 `python -m http.server 8081`
 
-- [Flask][1]
+---
+```
+如果是application/json方式
+from flask_restful import request
+dict = request.json()
 
-    - [分词][2]
-    ![900*250][4]
-    
-    - [关键词提取][3]
-    ![900*250][5]
+如果是application/x-www-form-urlencoded方式
+from flask_restful import request
+dict = request.form
 
+```
+---
 
 https://github.com/techstay/python-study/tree/master/flask-sample
 
 https://blog.csdn.net/u011054333/article/details/70151857
----
-[0]: https://mp.weixin.qq.com/s/2ZKDNF-FrMZe7L-vAtwhZw
-[1]: https://github.com/Jie-Yuan/MyTools/blob/master/8_RestfulApi/FlaskDemo.md
-[2]: http://211.159.150.211:8000/cut/jieba?var=车险要多少
-[3]: http://211.159.150.211:8000/keywords/glove?var=车险要多少
-[4]: https://github.com/Jie-Yuan/MyTools/blob/master/8_RestfulApi/pictures/cut.png
-[5]: https://github.com/Jie-Yuan/MyTools/blob/master/8_RestfulApi/pictures/keywords.png
+
