@@ -3,7 +3,7 @@
 #### `from flask_restful.reqparse import RequestParser`
 
 - `RequestParser().add_argument(location=...)`
-  - location: ``
+  - location
     - json: u'the JSON body'
     - form: u'the post body'
     - args: u'the query string'
