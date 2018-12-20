@@ -3,6 +3,12 @@
 #### `from flask_restful.reqparse import RequestParser`
 
 - `RequestParser().add_argument(location=...)`
+  - type=int
+  - required=True
+  - case_sensitive=True
+  - operators=('=',)
+  - default=None
+  - help=None
   - location
     - json: u'the JSON body'
     - form: u'the post body'
