@@ -20,5 +20,5 @@ dict = request.form
 
 https://github.com/techstay/python-study/tree/master/flask-sample
 
-https://blog.csdn.net/u011054333/article/details/70151857
+[0]: https://blog.csdn.net/u011054333/article/details/70151857
 
