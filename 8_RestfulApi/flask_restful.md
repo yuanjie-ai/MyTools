@@ -9,6 +9,7 @@
   - operators=('=',)
   - default=None
   - help=None
+  - choices=(): 输入参数范围
   - location
     - json: u'the JSON body'
     - form: u'the post body'
