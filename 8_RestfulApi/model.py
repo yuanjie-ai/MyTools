@@ -42,6 +42,7 @@ class Restful(Resource, Model):
     @classmethod
     def app(cls):
         app = Flask(__name__)
+        app.config['JSON_AS_ASCII'] = False
         api = Api(app)
         api.add_resource(cls, cls.routing)
         app.run(debug=True)
