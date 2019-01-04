@@ -1,6 +1,8 @@
 <h1 align = "center"> Tools </h1>
 
 ---
+http://bbs.bugcode.cn/t/77394
+
 conda config --add channels intel
 
 conda update conda
