@@ -1,6 +1,7 @@
 <h1 align = "center"> Tools </h1>
 
 ---
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 
 ## [configparser][28]
 
