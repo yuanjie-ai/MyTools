@@ -2,8 +2,12 @@
 
 ---
 conda config --add channels intel
+
 conda update conda
+
 conda install -c intel daal-static 
+
+pip install lightgbm --install-option=--nomp -U
 
 https://anaconda.org/intel/daal-static
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
