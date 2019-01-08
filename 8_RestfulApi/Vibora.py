@@ -4,6 +4,9 @@ __title__ = 'vibora_test'
 __author__ = 'JieYuan'
 __mtime__ = '18-11-6'
 """
+import socket
+socket.SO_REUSEPORT = 15
+
 import jieba
 from vibora.utils import RequestParams
 from vibora import Vibora, Response, Request
