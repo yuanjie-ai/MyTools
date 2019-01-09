@@ -13,7 +13,7 @@ pip install lightgbm --install-option=--nomp -U
 
 https://anaconda.org/intel/daal-static
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-
+## [xgb gpu][30]
 ## [configparser][28]
 
 ## 虚拟环境
@@ -192,3 +192,6 @@ https://blog.csdn.net/sijiaqi11/article/details/78601258
 [27]: https://github.com/ofek/hatch/blob/master/COMMANDS.rst
 [28]: https://blog.csdn.net/shortwall/article/details/78615368
 [29]: https://www.cnblogs.com/zl-graduate/p/5901090.html
+
+
+[30]: http://ssl.picnet.com.au/xgboost/
