@@ -13,7 +13,6 @@ pip install lightgbm --install-option=--nomp -U
 
 https://anaconda.org/intel/daal-static
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-## [xgb gpu][30]
 ## [configparser][28]
 
 ## 虚拟环境
@@ -103,11 +102,6 @@ trusted-host =  pypi.tuna.tsinghua.edu.cn
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-- Offline
-```
-which pip
-sudo /home/bigdata/software/anaconda/bin/pip install sklearn_pandas-1.4.0-py2.py3-none-any.whl
-```
 ---
 
 ## [Jupyter][10]: A simple way to share Jupyter Notebooks
@@ -116,7 +110,8 @@ sudo /home/bigdata/software/anaconda/bin/pip install sklearn_pandas-1.4.0-py2.py
 ```
 echo 'c = get_config()
 # Run all nodes interactively
-c.InteractiveShell.ast_node_interactivity = "all"' >> .ipython/profile_default/ipython_config.py
+c.InteractiveShell.ast_node_interactivity = "all"
+c.NotebookApp.contents_manager_class="jupytext.TextFileContentsManager"' >> .ipython/profile_default/ipython_config.py
 ```
 - 远程配置
 ```sh
